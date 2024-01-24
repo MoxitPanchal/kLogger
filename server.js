@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 
 // Enable CORS for all routes
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*'); // Adjust as needed for security
+    res.header('Access-Control-Allow-Origin', 'https://k-logger.vercel.app'); // Adjust as needed for security
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     next();
